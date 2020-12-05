@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico N° 3 - Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="miEstilo.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="logica.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JC Soluciones Informaticas</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Quienes Somos.html">¿Quienes Somos?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contactanos.html" tabindex="-1">Contactenos</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="texto" class="col-lg-12 text-center">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">Adivinanza</h1>
+                    <p class="lead"> Cuando tiene calor se abanica, a veces puede mojarse..<br>
+                        ¿De que parte de la computadora estamos hablando?</p>
+                </div>
+                <div class="form-group">
+                    <label for="formGroupExampleInput">Ingrese una respuesta: </label>
+                    <input type="text" class="form-control" id="palabraIngresada" placeholder="Ud cuenta con 4 intentos">
+                </div>
+                <div id="Alert1" class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    ¡¡Tu respuesta es correcta!!
+                </div>
+                <div id="pista1" class="alert alert-dark" role="alert">
+                   Primer pista: Tiene una cabellera muuuy abultada..
+                </div>
+                <div id="pista2" class="alert alert-dark" role="alert">
+                    Segunda pista: Es quien ejecuta todo lo que pedimos..
+                </div>
+                <div id="Alert2" class="alert alert-danger" role="alert">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <p id="incorrecto"></p>
+                </div>
+                <button id="botonAceptar" type="button" onclick="chequear()" class="btn btn-info">Enviar respuesta</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Servicios</h3>
+                        <ul>
+                            <li><a href="#">Diseño Web</a></li>
+                            <li><a href="#">Desarrollador</a></li>
+                            <li><a href="#">Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <h3>Acerca de:</h3>
+                        <ul>
+                            <li><a href="#">Compañia</a></li>
+                            <li><a href="#">Equipo</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 item text">
+                        <h3>JC Soluciones Informáticas</h3>
+                        <p>Empresa dedicaca al soporte y mantenimiento de computadoras y dispositivos electrónicos
+                            relacionados a la informática</p>
+                    </div>
+                    <div class="col item social"><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i
+                                class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-snapchat"></i></a><a
+                            href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+                <p class="copyright">JC Soluciones Informáticas © 2020</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
